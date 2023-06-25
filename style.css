@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    --fc-title: hsla(320, 69%, 42%, 1);
+    --fc-graph: hsla(244, 38%, 28%, 1);
+    --bg-primary: hsla(0, 0%, 100%, 1);
+    --bg-secondary:hsla(242, 50%, 38%, 1);
+    --ff-Mulish: 'Mulish', sans-serif;
+}
+
+body, header p{
+    color: var(--fc-graph);
+    font-family: var(--ff-Mulish);
+}
+
+.page{
+    width: 43rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    width: 36.4rem;
+    height: 37rem;
+    margin-bottom: 1.7rem;
+}
+
+h1{
+    font-size: 3.2rem;
+    font-weight: 900;
+}
+
+h1, h2{
+    color: var(--fc-title);    
+}
+
+header p{
+    font-size: 2rem
+}
+
+.buttonTop{
+    width: 5.8rem;
+    height: 10.5rem;
+    margin: 3.5rem 0 9.3rem;
+}
+
+.cards{
+    background: var(--bg-secondary);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.9rem;
+    padding: 5.2rem;
+}
+.card{
+    background: var(--bg-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2.5rem;
+    border-radius: 2rem;
+    width: 32rem;
+}
+.card img{
+    width: 8rem;
+    height: 8rem;
+}
+.txt{
+    width: 26.5rem;
+}
+
+.card h2{
+    margin: 3.3rem 0 1.9rem;
+}
+
+h2{
+    font-size: 2.9rem;
+    font-weight: 900;
+}
+.card p{
+    font-size: 1.6rem;
+}
+
+.form{
+    width: 100%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    margin: 7.8rem 4.1rem 6.5rem 4.1rem;
+}
+form h2{
+    margin-bottom: 2rem;
+    font-size: 3.2rem;
+}
+form input{
+    width: 34.8rem; 
+    border: none;  
+}
+form input, textarea{
+    outline: 0;
+}
+.contFrom{
+    display: flex;
+    gap: 1.2rem;
+    border: 0.15rem solid #312D64;
+    border-radius: 1.6rem;
+    padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+}
+.contFrom:nth-child(3){
+    width: 34.8rem;
+}
+
+form input, textarea{
+    color: #312D64;
+    font-size: 1.6rem;
+    font-family: var(--ff-Mulish);
+}
+.contFrom textarea{
+    border: none;
+    width: 100%;
+    height: 9.8rem;
+    resize: none
+}
+form button{
+    display: inline-flex;
+    height: 4.5rem;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-secondary);
+    color: var(--bg-primary);
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 1.6rem;
+    width: 15.1rem;
+    font-family: var(--ff-Mulish);
+    font-weight: 700;
+}
+.form img{
+    display: none;
+}
+
+footer{
+    background: var(--bg-secondary);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7.8rem;
+}
+footer p{
+    color: var(--bg-primary);
+    font-size: 1.9rem;
+}
+
+@media (min-width: 930px){
+    .page{
+        width: 100%;
+    }
+
+    header{
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: end;
+    }
+    header h1{
+        font-size: 5.4rem;
+    }
+    header p {
+        font-size: 32px;
+        margin-bottom: 17.9rem;
+    }
+    header .sideA{
+        text-align: inherit;
+    }
+    header .sideB img{
+        width: 719.36px;
+        height: 732.357px;
+        margin-bottom: 10.9rem;
+    }
+
+    .cards{
+        flex-direction: row;
+        height: 57.6rem;
+
+        justify-content: center;
+        gap: 6rem;
+    }
+
+    .card{
+        width: 36.6rem;
+        height: 44.8rem;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: row;
+    }
+    form{
+        margin: auto;
+        width: 595px;
+        height: 422px;
+    }
+    .contFrom:nth-child(3) {
+        width: 100%;
+      }
+
+    .form img{
+        display: block;
+    }
+}
